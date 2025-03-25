@@ -1,3 +1,18 @@
+s = float(input("Dime cuanto te ganas semanalmente: "))
+h = int(input("Cuantas horas trabajas demas: "))
+hT = int(input("Cuantas horas debiste trabajar: "))
+valor1 = s + (s/2)
+valor2 = s + s
+ht = hT+h
+if ht == 40:
+    print("Te debes ganar ", s)
+elif ht == 60:
+    print("Te debes ganar ", valor1)
+elif ht == 80:
+    print("Te debes ganar ", valor2)
+else:
+    print("No puedo calcular tu salario.")
+
 num = int(input("Ingrese su nota"))
 if num>50:
     print("Aprobaste")
